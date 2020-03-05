@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font: 16px/1.5 "Amatic SC", cursive;
+}
+
+.wrapper {
+    max-width: 900px;
+    margin: 2rem auto;
+    border: 2px solid grey;
+    border-radius: 0.3em;
+    display: flex;
+    color: #4D4C4F;
+}
+
+.image {
+    flex: 0 0 50%;
+    background: url('https://images.unsplash.com/photo-1531664412848-9610afed156c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60') no-repeat center center;
+}
+
+.calculator {
+    flex: 0 0 50%;
+    padding: 1.5rem 1rem;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 700;
+}
+
+.units {
+    display: flex;
+    margin: 1.5rem 0 0.5rem 0;
+    text-align: center;
+}
+
+.units .standart {
+    background: yellow;
+    flex-basis: 50%;
+    font-weight: 700;
+    padding: 0.3rem 0;
+}
+
+.units .metric {
+    background: grey;
+    flex-basis: 50%;
+    color: black;
+    font-weight: 700;
+    padding: 0.3rem 0;
+}
+
+label {
+    display: block;
+    font-weight: 700;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form p {
+    flex-basis: 45%;
+    margin-top: 1.5rem;
+}
+
+form a {
+    flex-basis: 100%;
+    font-weight: 700;
+    background: #05A2D3;
+    color: black;
+    text-align: center;
+    padding: 0.3rem 2rem;
+    margin-top: 1rem;
+}
+
+form .full {
+    flex-basis: 100%;
+}
+
+select,
+input {
+    border: 1px solid #959595;
+    border-radius: 3px;
+    border-color: gray;
+    padding: 0.3rem 0.5rem;
+    width: 100%;
+}
+
+select {
+    color: gray;
+    padding: 0.3rem 0.5rem;
+}
+
+.multi {
+    width: 100%;
+    display: flex;
+}
+
+.multi :nth-last-child(1) {
+    margin-left: 1rem;
+}
